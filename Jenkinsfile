@@ -1,2 +1,11 @@
-Dummy Jenkinsfile for tests, it will be blocked by remote jenkinsfile plugin...
-test2
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build triggered from the Original Jenkinsfile.'
+            }
+        }
+    }
+}
